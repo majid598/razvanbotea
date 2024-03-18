@@ -53,43 +53,43 @@ const Content = ({ content = [] }) => {
 };
 
 const WorkWithMe = () => {
-  const [cursor, setcursor] = useState(false);
-  const crsor = () => {
-    setcursor(true);
-  };
-  const dismiss = () => {
-    setcursor(false);
-  };
+  // const [cursor, setcursor] = useState(false);
+  // const crsor = () => {
+  //   setcursor(true);
+  // };
+  // const dismiss = () => {
+  //   setcursor(false);
+  // };
 
   const works = [
     {
       title: "Process automation",
-      mouseEnter: crsor,
-      mouseLeave: dismiss,
+      // mouseEnter: crsor,
+      // mouseLeave: dismiss,
       icon: "./assets/icons/automation.png",
       content: <Content content={box1} />,
       delay: 0.2,
     },
     {
       title: "Performance optimization",
-      mouseEnter: crsor,
-      mouseLeave: dismiss,
+      // mouseEnter: crsor,
+      // mouseLeave: dismiss,
       icon: "./assets/icons/performance.png",
       content: <Content content={box2} />,
       delay: 0.5,
     },
     {
       title: "Cost optimization",
-      mouseEnter: crsor,
-      mouseLeave: dismiss,
+      // mouseEnter: crsor,
+      // mouseLeave: dismiss,
       icon: "./assets/icons/costs.png",
       content: <Content content={box3} />,
       delay: 0.7,
     },
     {
       title: "Security and Compliance",
-      mouseEnter: crsor,
-      mouseLeave: dismiss,
+      // mouseEnter: crsor,
+      // mouseLeave: dismiss,
       icon: "./assets/icons/security.png",
       content: <Content content={box4} />,
       delay: 0.2,
@@ -98,12 +98,6 @@ const WorkWithMe = () => {
 
   return (
     <div className="w-full h-screen relative flex flex-col items-center py-16">
-      <div
-        id="crsr"
-        className={`crsr ${
-          cursor ? "scale-100" : "scale-0"
-        } cursor-none w-12 rounded-full transition-all duration-300 bg-transparent border-white border top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  z-50 absolute h-12`}
-      ></div>
       <h1 className="text-3xl font-semibold">Why work with me ?</h1>
       <div className="w-full lg:px-36 md:px-12 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-10 grid px-10 lg:grid-cols-3 gap-12">
         {works.map((work) => (
@@ -111,8 +105,8 @@ const WorkWithMe = () => {
             icon={work.icon}
             title={work.title}
             content={work.content}
-            mouseEnter={work.mouseEnter}
-            mouseLeave={work.mouseLeave}
+            // mouseEnter={work.mouseEnter}
+            // mouseLeave={work.mouseLeave}
             delay={work.delay}
           />
         ))}

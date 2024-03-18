@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #232732;
+  background-color: #23273c;
   color: white;
 }
 
@@ -45,4 +45,17 @@ body {
 
 #div:hover::after {
   bottom: 0;
+}
+
+.transition {
+  transition: linear 0.3s;
+}
+
+#div:hover#crsr {
+  /* display: none; */
+  background-color: red;
+}
+
+.profile:hover#crsr {
+  scale: 10;
 }

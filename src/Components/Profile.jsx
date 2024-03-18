@@ -4,7 +4,7 @@ import { useState } from "react";
 const Profile = () => {
   return (
     <div className="lg:w-1/2 md:w-1/2 w-full mx-auto flex-col items-center py-16 h-[calc(100vh-5rem)] relative flex">
-      <div className="profile w-52 h-52 cursor-pointer bgzinc-300 overflow-hidden border hover:scale-110 relative hover:-translate-y-5 transition-all duration-300 mt-10 rounded-full">
+      <div className="profile w-52 h-52 cursor- bgzinc-300 overflow-hidden border hover:scale-110 relative hover:-translate-y-5 transition-all duration-300 mt-10 rounded-full">
         <img
           src="./assets/razvan.jpeg"
           className="w-full h-full object-contain"

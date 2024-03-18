@@ -1,46 +1,11 @@
 import React, { useState } from "react";
 
 const Box = ({ img }) => {
-  const [position, setposition] = useState({ x: 0, y: 0 });
-  const [shoMagnifier, setshoMagnifier] = useState(false);
-  const [cursorPosition, setcursorPosition] = useState({ x: 0, y: 0 });
-
-  const handleMousehover = (e) => {
-    const { left, top, width, height } =
-      e.currentTarget.getBoundingClientRect();
-    const x = ((e.pageX - left) / width) * 100;
-    const y = ((e.pageY - top) / height) * 100;
-    setposition({ x, y });
-    setcursorPosition({ x: e.pageX - left, y: e.pageY - top });
-  };
 
   return (
     <div
       className={`shadow w-full relative h-32 rounded-xl bg-cover overflow-hidden`}
-      onMouseEnter={() => setshoMagnifier(true)}
-      onMouseLeave={() => setshoMagnifier(false)}
-      onMouseMove={handleMousehover}
     >
-      <div
-        className={`rounded-full border w-12 h-12 absolute left-[${
-          cursorPosition.x - 100
-        }px] top-[${cursorPosition.y - 100}px] overflow-hidden`}
-        style={{
-          // backgroundImage: `url(${img})`,
-          // backgroundPosition: `${position.x}% ${position.y}%`,
-          // left: `${cursorPosition.x - 100}px`,
-          // top: `${cursorPosition.y - 100}px`,
-          pointerEvents: "none",
-        }}
-      >
-        <div
-          className="w-full h-full"
-          style={{
-            backgroundImage: `url(${img})`,
-            backgroundPosition: `${position.x}% ${position.y}%`,
-          }}
-        ></div>
-      </div>
       <img src={img} alt="" className="w-full h-full object-contai" />
     </div>
   );

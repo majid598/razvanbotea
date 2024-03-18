@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
-const Box = ({ img }) => {
-
+const Box = ({ img, delay }) => {
   return (
-    <div
-      className={`shadow w-full relative h-32 rounded-xl bg-cover overflow-hidden`}
+    <motion.div
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{ delay }}
+      className={`shadow w-full relative h-32 bg-white rounded-xl bg-cover overflow-hidden`}
     >
       <img src={img} alt="" className="w-full h-full object-contai" />
-    </div>
+    </motion.div>
   );
 };
 
@@ -22,22 +25,22 @@ const Tech = () => {
       </h2>
 
       <div className="w-full px-36 lg:grid lg:grid-cols-8 gap-10 flex flex-wrap">
-        <Box img={"./assets/aws-cdk.png"} />
-        <Box img={"./assets/amazon-linux.png"} />
-        <Box img={"./assets/ec2.png"} />
-        <Box img={"./assets/ecs.png"} />
-        <Box img={"./assets/cloudfront.png"} />
-        <Box img={"./assets/nodejs.svg"} />
-        <Box img={"./assets/rds.png"} />
-        <Box img={"./assets/s3.png"} />
-        <Box img={"./assets/serverless.png"} />
-        <Box img={"./assets/terraform.svg"} />
-        <Box img={"./assets/typescript.svg"} />
-        <Box img={"./assets/ubuntu.svg"} />
-        <Box img={"./assets/docker.png"} />
-        <Box img={"./assets/cloudwatch.png"} />
-        <Box img={"./assets/cloudformation.svg"} />
-        <Box img={"./assets/alpine-linux.svg"} />
+        <Box img={"./assets/aws-cdk.png"} delay={0.1} />
+        <Box img={"./assets/amazon-linux.png"} delay={0.2} />
+        <Box img={"./assets/ec2.png"} delay={0.3} />
+        <Box img={"./assets/ecs.png"} delay={0.4} />
+        <Box img={"./assets/cloudfront.png"} delay={0.5} />
+        <Box img={"./assets/nodejs.svg"} delay={0.6} />
+        <Box img={"./assets/rds.png"} delay={0.7} />
+        <Box img={"./assets/s3.png"} delay={0.8} />
+        <Box img={"./assets/serverless.png"} delay={0.9} />
+        <Box img={"./assets/terraform.svg"} delay={1} />
+        <Box img={"./assets/typescript.svg"} delay={1.1} />
+        <Box img={"./assets/ubuntu.svg"} delay={1.2} />
+        <Box img={"./assets/docker.png"} delay={1.3} />
+        <Box img={"./assets/cloudwatch.png"} delay={1.4} />
+        <Box img={"./assets/cloudformation.svg"} delay={1.5} />
+        <Box img={"./assets/alpine-linux.svg"} delay={1.6} />
       </div>
     </div>
   );

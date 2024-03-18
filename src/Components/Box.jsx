@@ -1,4 +1,6 @@
-const Box = ({ content, title, icon, mouseEnter, mouseLeave }) => {
+import { motion } from "framer-motion";
+
+const Box = ({ content, title, icon, mouseEnter, mouseLeave, delay }) => {
   const crsr = (dets) => {
     console.log(dets.clientX);
     document.getElementById("crsr").style.left = dets.clientX + "px";
@@ -7,14 +9,17 @@ const Box = ({ content, title, icon, mouseEnter, mouseLeave }) => {
   };
 
   return (
-    <div
-      className="w-full py-4 lg:h-64 transition-all duration-300 overflow-hidden rounded-xl cursor-none relative shadow px-2 text-center mt-5"
+    <motion.div
+      className="w-full py-4 lg:h-64 overflow-hidden rounded-xl cursor-none relative shadow px-2 text-center mt-5"
       id="box"
       onMouseLeave={mouseLeave}
+      onMouseEnter={mouseEnter}
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{delay}}
     >
       <div
         onMouseMove={crsr}
-        onMouseEnter={mouseEnter}
         className="w-full h-full absolute top-0 left-0 bg-transparent"
       ></div>
       <div className="flex justify-center gap-4 items-center mb-4">
@@ -24,7 +29,7 @@ const Box = ({ content, title, icon, mouseEnter, mouseLeave }) => {
         </h2>
       </div>
       <div className="w-full flex flex-col gap-2 text-zinc-300">{content}</div>
-    </div>
+    </motion.div>
   );
 };
 

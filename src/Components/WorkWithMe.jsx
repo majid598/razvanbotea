@@ -68,6 +68,7 @@ const WorkWithMe = () => {
       mouseLeave: dismiss,
       icon: "./assets/icons/automation.png",
       content: <Content content={box1} />,
+      delay: 0.2,
     },
     {
       title: "Performance optimization",
@@ -75,6 +76,7 @@ const WorkWithMe = () => {
       mouseLeave: dismiss,
       icon: "./assets/icons/performance.png",
       content: <Content content={box2} />,
+      delay: 0.5,
     },
     {
       title: "Cost optimization",
@@ -82,6 +84,7 @@ const WorkWithMe = () => {
       mouseLeave: dismiss,
       icon: "./assets/icons/costs.png",
       content: <Content content={box3} />,
+      delay: 0.7,
     },
     {
       title: "Security and Compliance",
@@ -89,6 +92,7 @@ const WorkWithMe = () => {
       mouseLeave: dismiss,
       icon: "./assets/icons/security.png",
       content: <Content content={box4} />,
+      delay: 0.2,
     },
   ];
 
@@ -97,8 +101,8 @@ const WorkWithMe = () => {
       <div
         id="crsr"
         className={`crsr ${
-          cursor ? "block" : "hidden"
-        } cursor-none w-12 rounded-full bg-transparent border-white border  z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute h-12`}
+          cursor ? "scale-100" : "scale-0"
+        } cursor-none w-12 rounded-full transition-all duration-300 bg-transparent border-white border top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  z-50 absolute h-12`}
       ></div>
       <h1 className="text-3xl font-semibold">Why work with me ?</h1>
       <div className="w-full lg:px-36 md:px-12 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-10 grid px-10 lg:grid-cols-3 gap-12">
@@ -109,6 +113,7 @@ const WorkWithMe = () => {
             content={work.content}
             mouseEnter={work.mouseEnter}
             mouseLeave={work.mouseLeave}
+            delay={work.delay}
           />
         ))}
       </div>

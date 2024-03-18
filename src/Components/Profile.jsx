@@ -1,3 +1,6 @@
+import { motion, useAnimationControls } from "framer-motion";
+import { useState } from "react";
+
 const Profile = () => {
   return (
     <div className="lg:w-1/2 md:w-1/2 w-full mx-auto flex-col items-center py-16 h-[calc(100vh-5rem)] relative flex">
@@ -9,7 +12,7 @@ const Profile = () => {
         />
       </div>
       <div className="w-full flex flex-col text-center justify-center mt-5">
-        <h2 className="text-3xl font-semibold">I'm razvanbotea</h2>
+        <h2 className="text-3xl font-semibold">I'm Razvanbotea</h2>
         <h1 className="text-6xl flex items-center gap-4 justify-center tracking-tighter font-bold uppercase mt-3">
           AWS DevOps
           <div
@@ -33,3 +36,46 @@ const Profile = () => {
 };
 
 export default Profile;
+
+
+
+
+
+
+
+
+
+
+
+
+// const TextSpan = ({ children }) => {
+//   const controls = useAnimationControls();
+//   const [isPlaying, setisPlaying] = useState(false);
+//   const rubberBand = () => {
+//     controls.start({
+//       transform: [
+//         "scale3d(1, 1, 1)",
+//         "scale3d(1.4, .55, 1)",
+//         "scale3d(.75, 1.25, 1)",
+//         "scale3d(1.25, .85, 1)",
+//         "scale3d(.9, 1.05, 1)",
+//         "scale3d(1, 1, 1)",
+//       ],
+//       transition: {
+//         times: [0, 0.4, 0.6, 0.7, 0.8, 0.9],
+//       },
+//     });
+//     setisPlaying(true);
+//   };
+//   return (
+//     <motion.span
+//       animate={controls}
+//       onMouseOver={() => {
+//         if (!isPlaying) rubberBand();
+//       }}
+//       onAnimationComplete={() => setisPlaying(false)}
+//     >
+//       {children}
+//     </motion.span>
+//   );
+// };

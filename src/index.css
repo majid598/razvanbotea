@@ -9,7 +9,6 @@ body {
 
 .shadow {
   box-shadow: 0 0 15px #595c63;
-  background-color: #282c35;
 }
 
 .profile {
@@ -17,6 +16,12 @@ body {
 }
 .profile:hover {
   filter: drop-shadow(0 0 30px rgba(130, 237, 255, 0.97));
+}
+.profile2 {
+  box-shadow: 0 0 10px rgba(130, 237, 255, 0.4);
+}
+.profile2:hover {
+  filter: drop-shadow(0 0 15px rgba(130, 237, 255, 0.97));
 }
 
 #span {

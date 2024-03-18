@@ -37,17 +37,6 @@ const Profile = () => {
 
 export default Profile;
 
-
-
-
-
-
-
-
-
-
-
-
 // const TextSpan = ({ children }) => {
 //   const controls = useAnimationControls();
 //   const [isPlaying, setisPlaying] = useState(false);

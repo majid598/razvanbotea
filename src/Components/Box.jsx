@@ -16,7 +16,7 @@ const Box = ({ content, title, icon, mouseEnter, mouseLeave, delay }) => {
       onMouseEnter={mouseEnter}
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
-      transition={{delay}}
+      transition={{ delay }}
     >
       <div
         onMouseMove={crsr}

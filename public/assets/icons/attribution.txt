@@ -1,0 +1,4 @@
+automation.png		https://www.flaticon.com/free-icon/process_3222627
+performance.png		https://www.flaticon.com/free-icon/performance_3094933
+security.png		https://www.flaticon.com/free-icon/shield_508281
+costs.png		https://www.flaticon.com/free-icon/reduce-cost_5362869

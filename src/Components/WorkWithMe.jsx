@@ -103,7 +103,13 @@ const WorkWithMe = () => {
       <h1 className="text-3xl font-semibold">Why work with me ?</h1>
       <div className="w-full lg:px-36 md:px-12 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-10 grid px-10 lg:grid-cols-3 gap-12">
         {works.map((work) => (
-          <Box icon={work.icon} title={work.title} content={work.content} mouseEnter={work.mouseEnter} mouseLeave={work.mouseLeave} />
+          <Box
+            icon={work.icon}
+            title={work.title}
+            content={work.content}
+            mouseEnter={work.mouseEnter}
+            mouseLeave={work.mouseLeave}
+          />
         ))}
       </div>
     </div>

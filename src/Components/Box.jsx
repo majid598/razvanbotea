@@ -4,7 +4,7 @@ import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
-const Box = ({ content, title, icon, mouseEnter, mouseLeave, delay }) => {
+const Box = ({ content, title, icon, delay }) => {
   const [dialogOpen, setdialogOpen] = useState(false);
   const openDialog = () => {
     setdialogOpen(true);
@@ -16,8 +16,6 @@ const Box = ({ content, title, icon, mouseEnter, mouseLeave, delay }) => {
     <motion.div
       className="w-full py-4 overflow-hidden bg-[#16294c] rounded-xl relative border px-2 text-center mt-5"
       id="box"
-      onMouseLeave={mouseLeave}
-      onMouseEnter={mouseEnter}
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
       transition={{ delay }}
@@ -46,7 +44,7 @@ const Box = ({ content, title, icon, mouseEnter, mouseLeave, delay }) => {
             },
           }}
         >
-          <div className="px-4 py-6 bg-[#081936] text-white rounded-xl border border-white/70 relative">
+          <div className="px-4 py-6 bg-[#081936] w-/5 flex flex-col gap-1 text-white rounded-xl border border-white/70 relative">
             <div className="flex gap-4 justify-center items-center mb-4">
               <h2 className="text-2xl font-semibold py-2 text-center text-white my-2">
                 {title}

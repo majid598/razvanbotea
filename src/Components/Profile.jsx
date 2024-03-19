@@ -29,8 +29,9 @@ const Profile = () => {
             </span>
           </div>
         </h1>
-        <h4 className="lg:text-xl font-semibold lg:mt-2 mt-5">
-          Over 8 years of experience with AWS
+        <h4 className="lg:text-xl lg:tracking-tight lg:w-3/4 mx-auto font-semibold lg:mt-2 mt-5">
+          Coming together is a beginning; keeping together is progress; working
+          together is success
         </h4>
       </div>
     </div>

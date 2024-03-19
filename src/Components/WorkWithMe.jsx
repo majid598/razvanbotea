@@ -40,13 +40,11 @@ const Content = ({ content = [] }) => {
   return (
     <>
       {content.map((i) => (
-        <div className="w-full flex gap-2 py-2">
-          <div className="w-1/12 py-2">
+        <div className="w-full flex leading-none items-start text-start py-2 b-red-400 gap-2">
+          <div>
             <FaCheckSquare />
           </div>
-          <div className="w-11/12 text-start flex items-start">
-            <p>{i.content}</p>
-          </div>
+          <p>{i.content}</p>
         </div>
       ))}
     </>
@@ -54,43 +52,27 @@ const Content = ({ content = [] }) => {
 };
 
 const WorkWithMe = () => {
-  // const [cursor, setcursor] = useState(false);
-  // const crsor = () => {
-  //   setcursor(true);
-  // };
-  // const dismiss = () => {
-  //   setcursor(false);
-  // };
-
   const works = [
     {
       title: "Process automation",
-      // mouseEnter: crsor,
-      // mouseLeave: dismiss,
       icon: "./assets/icons/automation.png",
       content: <Content content={box1} />,
       delay: 0.2,
     },
     {
       title: "Performance optimization",
-      // mouseEnter: crsor,
-      // mouseLeave: dismiss,
       icon: "./assets/icons/performance.png",
       content: <Content content={box2} />,
       delay: 0.5,
     },
     {
       title: "Cost optimization",
-      // mouseEnter: crsor,
-      // mouseLeave: dismiss,
       icon: "./assets/icons/costs.png",
       content: <Content content={box3} />,
       delay: 0.7,
     },
     {
       title: "Security and Compliance",
-      // mouseEnter: crsor,
-      // mouseLeave: dismiss,
       icon: "./assets/icons/security.png",
       content: <Content content={box4} />,
       delay: 0.9,

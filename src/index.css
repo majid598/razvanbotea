@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #23273c;
+  background-color: #081936;
   color: white;
 }
 
@@ -16,12 +16,6 @@ body {
 }
 .profile:hover {
   filter: drop-shadow(0 0 30px rgba(130, 237, 255, 0.97));
-}
-.profile2 {
-  box-shadow: 0 0 10px rgba(130, 237, 255, 0.4);
-}
-.profile2:hover {
-  filter: drop-shadow(0 0 15px rgba(130, 237, 255, 0.97));
 }
 
 #span {
@@ -58,4 +52,13 @@ body {
 
 .profile:hover#crsr {
   scale: 10;
+}
+
+.afterBg::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.485),
+    rgba(255, 255, 255, 0.485),
+    rgba(255, 255, 255, 0.159)
+  );
 }

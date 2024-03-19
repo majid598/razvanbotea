@@ -39,9 +39,9 @@ const Content = ({ content = [] }) => {
   return (
     <>
       {content.map((i) => (
-        <div className="w-full flex px-2 cursor-none">
+        <div className="w-full flex px-2">
           <div className="w-1/12 flex items- py-2">
-            <div className="w-2 h-2 rounded-full bg-white"></div>
+            <div className="w-2 h-2 rounded-full bg-black"></div>
           </div>
           <div className="w-11/12 text-start flex items-start">
             <p>{i.content}</p>
@@ -99,7 +99,7 @@ const WorkWithMe = () => {
   return (
     <div className="w-full h-screen relative flex flex-col items-center py-16">
       <h1 className="text-3xl font-semibold">Why work with me ?</h1>
-      <div className="w-full lg:px-36 md:px-12 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-10 grid px-10 lg:grid-cols-3 gap-12">
+      <div className="w-full lg:px-32 md:px-12 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-10 grid px-10 lg:grid-cols-4 gap-10">
         {works.map((work) => (
           <Box
             icon={work.icon}

@@ -3,15 +3,15 @@ import { useState } from "react";
 
 const Profile = () => {
   return (
-    <div className="lg:w-1/2 md:w-1/2 w-full mx-auto flex-col items-center py-16 h-[calc(100vh-5rem)] relative flex">
-      <div className="profile w-52 h-52 cursor- bgzinc-300 overflow-hidden border hover:scale-110 relative hover:-translate-y-5 transition-all duration-300 mt-10 rounded-full">
+    <div className="lg:w-2/3 w-full mx-auto flex-col items-center py-16 h-[calc(100vh-5rem)] relative flex">
+      <div className="profile w-52 h-52 bgzinc-300 overflow-hidden border hover:scale-110 relative hover:-translate-y-5 transition-all duration-300 mt-10 rounded-full">
         <img
           src="./assets/razvan.jpeg"
           className="w-full h-full object-contain"
           alt=""
         />
       </div>
-      <div className="w-full flex flex-col text-center justify-center mt-5">
+      <div className="w-full flex bg-whit flex-col text-center justify-center mt-5">
         <h2 className="lg:text-3xl md:text-3xl sm:text-2xl text-xl font-semibold">
           I'm Razvanbotea
         </h2>
@@ -29,7 +29,7 @@ const Profile = () => {
             </span>
           </div>
         </h1>
-        <h4 className="lg:text-xl lg:tracking-tight lg:w-3/4 mx-auto font-semibold lg:mt-2 mt-5">
+        <h4 className="lg:text-xl lg:tracking-tight lg:w-2/4 mx-auto font-semibold lg:mt-2 mt-5">
           Coming together is a beginning; keeping together is progress; working
           together is success
         </h4>

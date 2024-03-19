@@ -50,11 +50,12 @@ body {
   background-color: red;
 }
 
-.afterBg::after {
+.item::after {
   background: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.485),
-    rgba(255, 255, 255, 0.292)
+    rgba(255, 255, 255, 0.913),
+    rgba(255, 255, 255, 0.632),
+    rgba(255, 255, 255, 0.232)
   );
 }
 

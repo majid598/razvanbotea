@@ -1,6 +1,6 @@
 import Box from "./Box";
 import { useState } from "react";
-import { FaCheckSquare } from "react-icons/fa";
+import { FaCheck } from "react-icons/fa";
 
 const box1 = [
   { content: "DB backups, snapshots and migrations between accounts" },
@@ -42,7 +42,7 @@ const Content = ({ content = [] }) => {
       {content.map((i) => (
         <div className="w-full flex leading-none items-start text-start py-2 b-red-400 gap-2">
           <div>
-            <FaCheckSquare />
+            <FaCheck />
           </div>
           <p>{i.content}</p>
         </div>

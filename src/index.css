@@ -50,14 +50,15 @@ body {
   background-color: red;
 }
 
-.profile:hover#crsr {
-  scale: 10;
-}
-
 .afterBg::after {
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0.485),
     rgba(255, 255, 255, 0.292)
   );
+}
+
+#btn:hover > svg {
+  transform: translateX(10px);
+  scale: 0.7;
 }

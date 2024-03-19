@@ -16,7 +16,7 @@ const Box = ({ img, delay }) => {
 
 const Tech = () => {
   return (
-    <div className="w-full min-h-screen relative">
+    <div className="w-full relative py-20">
       <h1 className="text-center text-4xl font-semibold tracking-[2px]">
         Text Key words
       </h1>

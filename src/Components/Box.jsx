@@ -29,10 +29,11 @@ const Box = ({ content, title, icon, mouseEnter, mouseLeave, delay }) => {
         </h2>
       </div>
       <button
-        className="w-full text-center items-center flex justify-center gap-4 text-zinc-300"
+        id="btn"
+        className="w-full text-center items-center flex justify-center gap-4 text-gray-300"
         onClick={openDialog}
       >
-        vew more <FaArrowRight />
+        vew more <FaArrowRight className=" transition-all duration-300" />
       </button>
       {dialogOpen && (
         <Dialog

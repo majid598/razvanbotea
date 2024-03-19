@@ -12,12 +12,14 @@ const Profile = () => {
         />
       </div>
       <div className="w-full flex flex-col text-center justify-center mt-5">
-        <h2 className="text-3xl font-semibold">I'm Razvanbotea</h2>
-        <h1 className="text-6xl flex items-center gap-4 justify-center tracking-tighter font-bold uppercase mt-3">
+        <h2 className="lg:text-3xl md:text-3xl sm:text-2xl text-xl font-semibold">
+          I'm Razvanbotea
+        </h2>
+        <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-2xl flex items-center gap-4 justify-center tracking-tighter font-bold uppercase mt-3">
           AWS DevOps
           <div
             id="div"
-            className="h-full cursor-pointer overflow-hidden relative w-72"
+            className="h-full cursor-pointer overflow-hidden relative lg:w-72 md:w-60 sm:w-48 w-28"
           >
             <span
               id="span"
@@ -27,7 +29,7 @@ const Profile = () => {
             </span>
           </div>
         </h1>
-        <h4 className="text-xl font-semibold mt-2">
+        <h4 className="lg:text-xl font-semibold lg:mt-2 mt-5">
           Over 8 years of experience with AWS
         </h4>
       </div>

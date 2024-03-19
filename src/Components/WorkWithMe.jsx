@@ -1,5 +1,6 @@
 import Box from "./Box";
 import { useState } from "react";
+import { FaCheckSquare } from "react-icons/fa";
 
 const box1 = [
   { content: "DB backups, snapshots and migrations between accounts" },
@@ -39,9 +40,9 @@ const Content = ({ content = [] }) => {
   return (
     <>
       {content.map((i) => (
-        <div className="w-full flex px-2">
-          <div className="w-1/12 flex items- py-2">
-            <div className="w-2 h-2 rounded-full bg-black"></div>
+        <div className="w-full flex gap-2 py-2">
+          <div className="w-1/12 py-2">
+            <FaCheckSquare />
           </div>
           <div className="w-11/12 text-start flex items-start">
             <p>{i.content}</p>
@@ -92,14 +93,14 @@ const WorkWithMe = () => {
       // mouseLeave: dismiss,
       icon: "./assets/icons/security.png",
       content: <Content content={box4} />,
-      delay: 0.2,
+      delay: 0.9,
     },
   ];
 
   return (
-    <div className="w-full h-screen relative flex flex-col items-center py-16">
+    <div className="w-full h- relative flex flex-col items-center py-16">
       <h1 className="text-3xl font-semibold">Why work with me ?</h1>
-      <div className="w-full lg:px-32 md:px-12 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-10 grid px-10 lg:grid-cols-4 gap-10">
+      <div className="w-full lg:px-32 md:px-12 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 py-10 grid px-10 lg:grid-cols-4 gap-10">
         {works.map((work) => (
           <Box
             icon={work.icon}

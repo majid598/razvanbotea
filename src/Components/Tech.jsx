@@ -20,11 +20,11 @@ const Tech = () => {
       <h1 className="text-center text-4xl font-semibold tracking-[2px]">
         Text Key words
       </h1>
-      <h2 className="text-2xl font-semibold px-36 py-10">
+      <h2 className="lg:text-2xl text-xl font-semibold lg:px-36 text-center py-10">
         AWS (Amazon Web Services)
       </h2>
 
-      <div className="w-full px-36 lg:grid lg:grid-cols-8 gap-10 flex flex-wrap">
+      <div className="w-full lg:px-36 grid lg:grid-cols-8 gap-10 px-10 grid-cols-2">
         <Box img={"./assets/aws-cdk.png"} delay={0.1} />
         <Box img={"./assets/amazon-linux.png"} delay={0.2} />
         <Box img={"./assets/ec2.png"} delay={0.3} />

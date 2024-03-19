@@ -14,7 +14,7 @@ const Box = ({ content, title, icon, mouseEnter, mouseLeave, delay }) => {
   };
   return (
     <motion.div
-      className="w-full py-4 overflow-hidden rounded-xl relative shadow px-2 text-center mt-5"
+      className="w-full py-4 overflow-hidden bg-[#16294c] rounded-xl relative border px-2 text-center mt-5"
       id="box"
       onMouseLeave={mouseLeave}
       onMouseEnter={mouseEnter}
@@ -35,9 +35,23 @@ const Box = ({ content, title, icon, mouseEnter, mouseLeave, delay }) => {
         vew more <FaArrowRight />
       </button>
       {dialogOpen && (
-        <Dialog open={openDialog} onClose={closeDialog}>
-          <div className="w-72 p-4 bg-white relative">
-            <button className="top-2 right-2 absolute" onClick={closeDialog}>
+        <Dialog
+          open={openDialog}
+          onClose={closeDialog}
+          PaperProps={{
+            style: {
+              backgroundColor: "transparent",
+              boxShadow: "none",
+            },
+          }}
+        >
+          <div className="px-4 py-6 bg-[#081936] text-white rounded-xl border border-white/70 relative">
+            <div className="flex gap-4 justify-center items-center mb-4">
+              <h2 className="text-2xl font-semibold py-2 text-center text-white my-2">
+                {title}
+              </h2>
+            </div>
+            <button className="top-3 right-3 absolute" onClick={closeDialog}>
               <IoMdClose className="text-2xl" />
             </button>
             {content}

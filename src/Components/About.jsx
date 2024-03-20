@@ -4,7 +4,7 @@ const About = () => {
       <div className="w-full h-full rounded-2xl bg-[#080D18] items-center flex lg:flex-row flex-col about">
         <div className="lg:w-2/4 w-full lg:h-full h-2/4 lg:p-14 p-8 relative">
           <h1 className="text-4xl font-semibold">About</h1>
-          <p className="lg:py-10 py-4 text-sm lg:leading-6 text-gray-400 lg:w-11/12">
+          <p className="lg:py-10 py-4 text-sm lg:leading-6 leading-4 tracking-tighter lg:tracking-normal text-gray-400 lg:w-11/12">
             As an AWS DevOps Engineer with over 8 years of dedicated experience,
             I bring a unique perspective having initially started my journey as
             a Backend Software Developer. My expertise lies in leveraging the
@@ -19,8 +19,8 @@ const About = () => {
             cloud computing.
           </p>
         </div>
-        <div className="lg:w-2/4 w-full lg:h-full gap-10 h-[60vh] lg:py-12 p-8 lg:px-24">
-          <div className="box shadow overflow-hidden w-80 rounded-2xl">
+        <div className="lg:w-2/4 w-full lg:h-full gap-10 lg:py-12 p-8 lg:px-24">
+          <div className="box shadow overflow-hidden lg:w-80 rounded-2xl">
             <img
               src="./assets/razvan.jpeg"
               className="w-full h-full object-contain"

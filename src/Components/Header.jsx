@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa6";
 const Header = () => {
   return (
     <header>
-      <nav className="w-full h-20 flex relative bg-transparent/30 items-center justify-between px-20">
+      <nav className="w-full h-20 flex relative bg-transparent/30 items-center justify-between lg:px-20 md:px-20 sm:px-16 px-10">
         <motion.div
           initial={{ y: "-100%" }}
           whileInView={{ y: 0 }}

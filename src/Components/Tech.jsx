@@ -64,14 +64,14 @@ const Tech = () => {
       <h1 className="text-center daFont lg:text-4xl md:text-4xl sm:text-3xl text-2xl font-semibold tracking-[2px]">
         Tech keywords
       </h1>
-      <h2 className="lg:text-2xl text-xl daFont font-semibold lg:px-36 text-center py-10">
+      <h2 className="lg:text-2xl text-xl daFont font-semibold lg:px-28 text-center py-10">
         AWS (Amazon Web Services)
       </h2>
 
-      <div className="w-full lg:px-36 gap-10 justify-center sm:px-10 py-24 flex flex-wrap">
+      <div className="w-full lg:px-28 gap-10 lg:grid lg:grid-cols-5 sm:px-10 py-24 justify-center flex flex-wrap">
         {categories.map((i) => (
           <div
-            className={`bg-[#16294c] lg:w-1/6 md:w-1/4 px-4 w-1/3 relative h-24 rounded-xl bg-cover overflow-hidden`}
+            className={`bg-[#16294c] lg:w-full md:w-1/4 px-4 w-1/3 relative h-24 rounded-xl bg-cover overflow-hidden`}
           >
             <h2 className="text-center py-3 text-2xl">Compute</h2>
             <button

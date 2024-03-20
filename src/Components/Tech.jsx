@@ -77,10 +77,10 @@ const Tech = () => {
           <Category items={items} dialogClose={dialogClose} />
         </Dialog>
       )}
-      <h1 className="text-center text-4xl font-semibold tracking-[2px]">
-        Text Key words
+      <h1 className="text-center daFont text-4xl font-semibold tracking-[2px]">
+        Tech keywords
       </h1>
-      <h2 className="lg:text-2xl text-xl font-semibold lg:px-36 text-center py-10">
+      <h2 className="lg:text-2xl text-xl daFont font-semibold lg:px-36 text-center py-10">
         AWS (Amazon Web Services)
       </h2>
 

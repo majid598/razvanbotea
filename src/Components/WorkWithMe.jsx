@@ -84,7 +84,7 @@ const WorkWithMe = () => {
       <h1 className="daFont lg:text-3xl text-2xl font-semibold">
         Why work with me ?
       </h1>
-      <div className="w-full lg:px-28 md:px-12 md:grid-cols- grid-cols-1 py-10 grid px-10 lg:grid-cols-3 gap-10">
+      <div className="w-full lg:px-28 md:px-12 sm:grid-cols-2 md:grid-cols-2 grid-cols-1 py-10 grid px-10 lg:grid-cols-3 gap-10">
         {works.map((work) => (
           <Box
             icon={work.icon}

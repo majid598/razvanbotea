@@ -14,13 +14,13 @@ const Box = ({ content, title, icon, delay }) => {
   };
   return (
     <motion.div
-      className="w-full overflow-hidden bg-[#16294c] h- rounded-xl relative text-center mt-5"
+      className="w-full overflow-hidden bg-[#16294c] min-h-80 rounded-xl relative text-center mt-5"
       id="box"
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
       transition={{ delay }}
     >
-      <div className="w-full flex gap-4 items-center justify-center py-6 px-4">
+      <div className="w-full flex gap-4 items-center justify-center min-h-28 p-4">
         <img
           src={icon}
           className="lg:w-12 lg:h-12 md:w-10 md:h-10 w-8 h-8 invert"

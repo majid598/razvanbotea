@@ -29,14 +29,6 @@ const Category = ({ items, dialogClose }) => {
 };
 
 const Tech = () => {
-  const categories = [
-    "Compute",
-    // "Category",
-    // "Category",
-    // "Category",
-    // "Category",
-    // "Category",
-  ];
   const items = [
     {
       lable: "EC2",
@@ -68,15 +60,6 @@ const Tech = () => {
   };
   return (
     <div className="w-full relative py-20">
-      {isDialog && (
-        <Dialog
-          open={dialogOpen}
-          onClose={dialogClose}
-          PaperProps={{ style: { backgroundColor: "transparent" } }}
-        >
-          <Category items={items} dialogClose={dialogClose} />
-        </Dialog>
-      )}
       <h1 className="text-center daFont text-4xl font-semibold tracking-[2px]">
         Tech keywords
       </h1>
@@ -85,19 +68,26 @@ const Tech = () => {
       </h2>
 
       <div className="w-full lg:px-36 grid lg:grid-cols-6 gap-10 px-10 grid-cols-2">
-        {categories.map((category) => (
-          <div
-            className={`shadow w-full px-4 relative h-24 rounded-xl bg-cover overflow-hidden`}
+        <div
+          className={`shadow w-full px-4 relative h-24 rounded-xl bg-cover overflow-hidden`}
+        >
+          <h2 className="text-center py-3 text-2xl">Copute</h2>
+          <button
+            onClick={dialogOpen}
+            className="flex mx-auto items-center gap-2"
           >
-            <h2 className="text-center py-3 text-2xl">{category}</h2>
-            <button
-              onClick={dialogOpen}
-              className="flex mx-auto items-center gap-2"
-            >
-              View <FaEye />
-            </button>
-          </div>
-        ))}
+            View <FaEye />
+          </button>
+        </div>
+        {isDialog && (
+          <Dialog
+            open={dialogOpen}
+            onClose={dialogClose}
+            PaperProps={{ style: { backgroundColor: "transparent" } }}
+          >
+            <Category items={items} dialogClose={dialogClose} />
+          </Dialog>
+        )}
       </div>
     </div>
   );

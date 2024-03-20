@@ -15,7 +15,7 @@ const Profile = () => {
         <h2 className="lg:text-3xl md:text-3xl sm:text-2xl text-xl font-semibold">
           I'm Razvanbotea
         </h2>
-        <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-2xl flex items-center gap-4 justify-center tracking-tighter font-bold uppercase mt-3">
+        <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-2xl flex items-center lg:gap-4 md:gap-3 gap-2 justify-center tracking-tighter font-bold uppercase mt-3">
           AWS DevOps
           <div
             id="div"

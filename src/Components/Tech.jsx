@@ -29,6 +29,7 @@ const Category = ({ items, dialogClose }) => {
 };
 
 const Tech = () => {
+  const categories = [1, 2, 3, 4, 5];
   const items = [
     {
       lable: "EC2",
@@ -60,25 +61,27 @@ const Tech = () => {
   };
   return (
     <div className="w-full relative py-20">
-      <h1 className="text-center daFont text-4xl font-semibold tracking-[2px]">
+      <h1 className="text-center daFont lg:text-4xl md:text-4xl sm:text-3xl text-2xl font-semibold tracking-[2px]">
         Tech keywords
       </h1>
       <h2 className="lg:text-2xl text-xl daFont font-semibold lg:px-36 text-center py-10">
         AWS (Amazon Web Services)
       </h2>
 
-      <div className="w-full lg:px-36 grid lg:grid-cols-6 gap-10 px-10 grid-cols-2">
-        <div
-          className={`shadow w-full px-4 relative h-24 rounded-xl bg-cover overflow-hidden`}
-        >
-          <h2 className="text-center py-3 text-2xl">Copute</h2>
-          <button
-            onClick={dialogOpen}
-            className="flex mx-auto items-center gap-2"
+      <div className="w-full lg:px-36 gap-10 justify-center sm:px-10 flex flex-wrap">
+        {categories.map((i) => (
+          <div
+            className={`shadow lg:w-1/6 md:w-1/4 px-4 w-1/3 relative h-24 rounded-xl bg-cover overflow-hidden`}
           >
-            View <FaEye />
-          </button>
-        </div>
+            <h2 className="text-center py-3 text-2xl">Compute</h2>
+            <button
+              onClick={dialogOpen}
+              className="flex mx-auto items-center gap-2"
+            >
+              View <FaEye />
+            </button>
+          </div>
+        ))}
         {isDialog && (
           <Dialog
             open={dialogOpen}

@@ -81,7 +81,7 @@ const WorkWithMe = () => {
 
   return (
     <div className="w-full h- relative flex flex-col items-center py-16">
-      <h1 className="daFont text-3xl font-semibold">Why work with me ?</h1>
+      <h1 className="daFont lg:text-3xl text-2xl font-semibold">Why work with me ?</h1>
       <div className="w-full lg:px-32 md:px-12 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 py-10 grid px-10 lg:grid-cols-4 gap-10">
         {works.map((work) => (
           <Box

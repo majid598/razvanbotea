@@ -40,7 +40,7 @@ const Content = ({ content = [] }) => {
   return (
     <>
       {content.map((i) => (
-        <div className="w-full flex leading-none items-start text-start py-2 b-red-400 gap-2">
+        <div className="w-full flex leading-one items-start text-start py-2 b-red-400 gap-2">
           <div>
             <FaCheck />
           </div>
@@ -84,7 +84,7 @@ const WorkWithMe = () => {
       <h1 className="daFont lg:text-3xl text-2xl font-semibold">
         Why work with me ?
       </h1>
-      <div className="w-full lg:px-28 md:px-12 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 py-10 grid px-10 lg:grid-cols-4 gap-10">
+      <div className="w-full lg:px-28 md:px-12 md:grid-cols- grid-cols-1 py-10 grid px-10 lg:grid-cols-3 gap-10">
         {works.map((work) => (
           <Box
             icon={work.icon}

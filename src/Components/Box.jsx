@@ -14,49 +14,25 @@ const Box = ({ content, title, icon, delay }) => {
   };
   return (
     <motion.div
-      className="w-full py-4 overflow-hidden bg-[#16294c] h-56 flex flex-col justify-center rounded-xl relative px-2 text-center mt-5"
+      className="w-full overflow-hidden bg-[#16294c] h- rounded-xl relative text-center mt-5"
       id="box"
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
       transition={{ delay }}
     >
-      <div className="flex flex-col justify-center items-center mb-4">
-        <img src={icon} className="w-12 h-12 invert" alt="" />
-        <h2 className="text-2xl font-semibold py-2 text-center text-white my-2">
+      <div className="w-full flex gap-4 items-center justify-center py-6 px-4">
+        <img
+          src={icon}
+          className="lg:w-12 lg:h-12 md:w-10 md:h-10 w-8 h-8 invert"
+          alt=""
+        />
+        <h2 className="lg:text-2xl md:text-2xl sm:text-2xl text-xl font-semibold py-2 text-center text-white my-2">
           {title}
         </h2>
       </div>
-      <button
-        id="btn"
-        className="w-full text-center items-center flex justify-center gap-4 text-gray-300"
-        onClick={openDialog}
-      >
-        More <FaArrowRight className=" transition-all duration-300" />
-      </button>
-      {dialogOpen && (
-        <Dialog
-          open={openDialog}
-          onClose={closeDialog}
-          PaperProps={{
-            style: {
-              backgroundColor: "transparent",
-              boxShadow: "none",
-            },
-          }}
-        >
-          <div className="p-10 bg-[#081936] flex flex-col gap-1 text-white rounded-xl relative">
-            <div className="flex gap-4 justify-center items-center mb-4">
-              <h2 className="text-2xl daFont font-semibold py-2 text-center text-white my-2">
-                {title}
-              </h2>
-            </div>
-            <button className="top-3 right-3 absolute" onClick={closeDialog}>
-              <IoMdClose className="text-2xl" />
-            </button>
-            {content}
-          </div>
-        </Dialog>
-      )}
+      <div className="flex flex-col pb-10 justify-center text-sm items-center w-full px-10">
+        {content}
+      </div>
     </motion.div>
   );
 };

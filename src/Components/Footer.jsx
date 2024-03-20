@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="w-full relative lg:h-[60vh] border-t p-20">
       <h1 className="text-3xl font-semibold">Contact me</h1>
-      <div className="flex lg:flex-row md:flex-row flex-col lg:gap-32 md:gap-24">
+      <div className="flex lg:flex-row md:flex-row flex-col lg:gap-32 lg:justify-between md:gap-24">
         <div className="mt-12 lg:ml-40 md:ml-32">
           <a
             href="https://www.linkedin.com/in/razvanbotea/"
@@ -23,7 +23,7 @@ const Footer = () => {
             <IoMdMail /> contact@razvanbotea.me
           </a>
         </div>
-        <div className="lg:w-1/4 mt-10 lg:mt-0">
+        <div className="lg:w-1/4 mt-10 lg:mt-0 mx-20">
           <img
             src={"./assets/manoncall.png"}
             className="w-full h-full object-contain"

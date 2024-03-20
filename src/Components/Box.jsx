@@ -14,7 +14,7 @@ const Box = ({ content, title, icon, delay }) => {
   };
   return (
     <motion.div
-      className="w-full py-4 overflow-hidden bg-[#16294c] rounded-xl relative border px-2 text-center mt-5"
+      className="w-full py-4 overflow-hidden bg-[#16294c] h-56 flex flex-col justify-center rounded-xl relative px-2 text-center mt-5"
       id="box"
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
@@ -31,7 +31,7 @@ const Box = ({ content, title, icon, delay }) => {
         className="w-full text-center items-center flex justify-center gap-4 text-gray-300"
         onClick={openDialog}
       >
-        vew more <FaArrowRight className=" transition-all duration-300" />
+        More <FaArrowRight className=" transition-all duration-300" />
       </button>
       {dialogOpen && (
         <Dialog
@@ -44,9 +44,9 @@ const Box = ({ content, title, icon, delay }) => {
             },
           }}
         >
-          <div className="px-4 py-6 bg-[#081936] w-/5 flex flex-col gap-1 text-white rounded-xl border border-white/70 relative">
+          <div className="p-10 bg-[#081936] flex flex-col gap-1 text-white rounded-xl relative">
             <div className="flex gap-4 justify-center items-center mb-4">
-              <h2 className="text-2xl font-semibold py-2 text-center text-white my-2">
+              <h2 className="text-2xl daFont font-semibold py-2 text-center text-white my-2">
                 {title}
               </h2>
             </div>

@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Profile = () => {
   return (
-    <div className="lg:w-2/3 w-full mx-auto flex-col items-center py-16 h-[calc(100vh-5rem)] relative flex">
+    <div className="w-full mx-auto flex-col items-center py-16 h-[calc(100vh-5rem)] relative flex">
       <div className="profile w-52 h-52 bgzinc-300 cursor-pointer overflow-hidden border hover:scale-110 relative hover:-translate-y-5 transition-all duration-300 mt-10 rounded-full">
         <img
           src="./assets/razvan.jpeg"
@@ -15,11 +15,11 @@ const Profile = () => {
         <h2 className="lg:text-3xl md:text-3xl sm:text-2xl text-xl font-semibold">
           I'm Razvanbotea
         </h2>
-        <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-2xl flex items-center lg:gap-4 md:gap-3 gap-2 justify-center tracking-tighter font-bold uppercase mt-3">
+        <h1 className="lg:text-6xl daFont md:text-4xl sm:text-3xl text-2xl flex items-center lg:gap-4 md:gap-3 gap-2 justify-center tracking-tighter font-bold uppercase mt-3">
           AWS DevOps
           <div
             id="div"
-            className="h-full cursor-pointer overflow-hidden relative lg:w-72 md:w-60 sm:w-48 w-28"
+            className="h-full cursor-pointer overflow-hidden relative lg:w-96 md:w-72 sm:w-60 w-40"
           >
             <span
               id="span"

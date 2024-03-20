@@ -4,7 +4,7 @@ const About = () => {
       <div className="w-full h-full rounded-2xl bg-[#080D18] flex lg:flex-row flex-col about">
         <div className="lg:w-2/4 w-full lg:h-full h-2/4 lg:p-14 p-8 relative">
           <h1 className="text-4xl font-semibold">About</h1>
-          <p className="lg:py-10 py-4 text-sm text-gray-400 lg:w-11/12">
+          <p className="lg:py-10 py-4 text-sm leading-6 text-gray-400 lg:w-11/12">
             As an AWS DevOps Engineer with over 8 years of dedicated experience,
             I bring a unique perspective having initially started my journey as
             a Backend Software Developer. My expertise lies in leveraging the

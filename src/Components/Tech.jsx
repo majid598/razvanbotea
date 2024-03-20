@@ -6,7 +6,7 @@ import { IoMdClose } from "react-icons/io";
 
 const Category = ({ items, dialogClose }) => {
   return (
-    <div className="bg-[#081936] border flex pt-12 flex-col gap-2 rounded-2xl p-5">
+    <div className="bg-[#081936] flex pt-12 flex-col gap-2 rounded-2xl p-5">
       <button
         className="top-3 right-3 absolute text-white"
         onClick={dialogClose}
@@ -68,17 +68,17 @@ const Tech = () => {
         AWS (Amazon Web Services)
       </h2>
 
-      <div className="w-full lg:px-36 gap-10 justify-center sm:px-10 flex flex-wrap">
+      <div className="w-full lg:px-36 gap-10 justify-center sm:px-10 py-24 flex flex-wrap">
         {categories.map((i) => (
           <div
-            className={`shadow lg:w-1/6 md:w-1/4 px-4 w-1/3 relative h-24 rounded-xl bg-cover overflow-hidden`}
+            className={`bg-[#16294c] lg:w-1/6 md:w-1/4 px-4 w-1/3 relative h-24 rounded-xl bg-cover overflow-hidden`}
           >
             <h2 className="text-center py-3 text-2xl">Compute</h2>
             <button
               onClick={dialogOpen}
               className="flex mx-auto items-center gap-2"
             >
-              View <FaEye />
+              More <FaEye />
             </button>
           </div>
         ))}

@@ -4,10 +4,10 @@ import { IoMdMail } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <div className="w-full relative lg:flex justify-between pr-60 md:flex lg:h-[60vh] border-t p-20">
+    <div className="w-full relative lg:flex justify-between lg:pr-60 md:flex lg:h-[60vh] border-t p-20">
       <div>
-        <h1 className="text-3xl font-semibold">Contact me</h1>
-        <div className="mt-20">
+        <h1 className="text-3xl font-semibold w-full">Contact me</h1>
+        <div className="lg:mt-20 mt-5">
           <a
             href="https://www.linkedin.com/in/razvanbotea/"
             className="flex items-center gap-1"
@@ -24,7 +24,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="lg:w-1/4 w-full mt-10 lg:mt-0 mx-20">
+      <div className="lg:w-1/4 w-full flex mt-10 lg:mt-0 mx-20">
         <img
           src={"./assets/manoncall.png"}
           className="w-full h-full object-contain"

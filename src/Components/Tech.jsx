@@ -15,9 +15,11 @@ const CategoryCard = ({ category }) => {
   };
   return (
     <div
-      className={`bg-[#16294c] lg:w-full flex flex-col items-center justify-between md:w-1/4 lg:py-4 px-4 w-1/3 relative min-h-24 rounded-xl bg-cover overflow-hidden`}
+      className={`bg-[#16294c] w-full flex flex-col items-center justify-between py-4 px-14 lg:px-4 md:px-4 sm:px-4 relative min-h-24 rounded-xl overflow-hidden`}
     >
-      <h2 className="text-center py-3 text-2xl">{category.name}</h2>
+      <h2 className="text-center py-3 lg:text-2xl md:text-xl">
+        {category.name}
+      </h2>
       <button onClick={dialogOpen} className="flex mx-auto items-center gap-2">
         More <FaEye />
       </button>
@@ -162,7 +164,7 @@ const Tech = () => {
         {
           lable: "ElastiCache",
           text: "I Don't know what is this",
-          icon: "./assets/elastiCache.webp",
+          icon: "./assets/elasticache.png",
         },
       ],
     },
@@ -189,7 +191,7 @@ const Tech = () => {
   ];
 
   return (
-    <div className="w-full relative py-20">
+    <div className="w-full relative lg:py-20 md:py-16">
       <h1 className="text-center daFont lg:text-4xl md:text-4xl sm:text-3xl text-2xl font-semibold tracking-[2px]">
         Tech keywords
       </h1>
@@ -197,7 +199,7 @@ const Tech = () => {
         AWS (Amazon Web Services)
       </h2>
 
-      <div className="w-full lg:px-28 gap-10 lg:grid lg:grid-cols-4 sm:px-10 py-24 justify-center flex flex-wrap">
+      <div className="w-full lg:px-28 gap-10 lg:grid md:grid-cols-2 grid lg:grid-cols-3 sm:px-10 lg:py-24 md:py-20 py-6 justify-center">
         {categories.map((category) => (
           <CategoryCard category={category} />
         ))}

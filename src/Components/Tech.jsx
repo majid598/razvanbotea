@@ -14,8 +14,11 @@ const CategoryCard = ({ category }) => {
     setisDialog(false);
   };
   return (
-    <div
-      className={`bg-[#16294c] w-full flex flex-col items-center justify-between py-4 px-14 lg:px-4 md:px-4 sm:px-4 relative min-h-24 rounded-xl overflow-hidden`}
+    <motion.div
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{ delay: category.delay }}
+      className={`bg-[#16294c] w-full flex flex-col items-center justify-between py-4 px-20 lg:px-4 md:px-4 sm:px-4 relative min-h-24 rounded-xl overflow-hidden`}
     >
       <h2 className="text-center py-3 lg:text-2xl md:text-xl">
         {category.name}
@@ -32,7 +35,7 @@ const CategoryCard = ({ category }) => {
           <ItemCard items={category.items} dialogClose={dialogClose} />
         </Dialog>
       )}
-    </div>
+    </motion.div>
   );
 };
 
@@ -40,6 +43,7 @@ const Tech = () => {
   const categories = [
     {
       name: "Compute",
+      delay: 0,
       items: [
         {
           lable: "EC2",
@@ -65,6 +69,7 @@ const Tech = () => {
     },
     {
       name: "Tools",
+      delay: 0.2,
       items: [
         {
           lable: "AWS CDK",
@@ -95,95 +100,99 @@ const Tech = () => {
     },
     {
       name: "CDN & Storage",
+      delay: 0.4,
       items: [
         {
           lable: "S3",
-          text: "I Don't know what is this",
+          text: "Configuring & Optimizing (+ Athena)",
           icon: "./assets/s3.png",
         },
         {
           lable: "Cloudfront",
-          text: "I Don't know what is this",
+          text: "Deploying, Lambda@Edge, WAF, Caching",
           icon: "./assets/cloudfront.png",
         },
         {
           lable: "EBS",
-          text: "I Don't know what is this",
+          text: "Storage for instances and containers",
           icon: "./assets/ebs.png",
         },
         {
           lable: "EFS",
-          text: "I Don't know what is this",
+          text: "Over the network file system",
           icon: "./assets/efs.svg",
         },
       ],
     },
     {
       name: "Security & Compliance",
+      delay: 0.6,
       items: [
         {
           lable: "Config",
-          text: "I Don't know what is this",
+          text: "Maintain and monitor resources for compliance",
           icon: "./assets/config.png",
         },
         {
           lable: "Security Hub",
-          text: "I Don't know what is this",
+          text: "Abide to security best practices",
           icon: "./assets/securityHub.jpg",
         },
         {
           lable: "SSM",
-          text: "I Don't know what is this",
+          text: "Maintain instances and provide automation",
           icon: "./assets/ssm.png",
         },
         {
           lable: "WAF",
-          text: "I Don't know what is this",
+          text: "Firewall against common threat vectors",
           icon: "./assets/waf.png",
         },
         {
           lable: "VPC",
-          text: "I Don't know what is this",
+          text: "ACLs and Security groups management",
           icon: "./assets/vpc.png",
         },
       ],
     },
     {
       name: "Databases",
+      delay: 0.8,
       items: [
         {
           lable: "RDS",
-          text: "I Don't know what is this",
+          text: "Deploy, maintain, auto scale, monitor databases",
           icon: "./assets/rds.png",
         },
         {
           lable: "DynamoDB",
-          text: "I Don't know what is this",
+          text: "Tables for simple/low requirements",
           icon: "./assets/dynamodb.jpg",
         },
         {
           lable: "ElastiCache",
-          text: "I Don't know what is this",
+          text: "Redis clusters for caching data",
           icon: "./assets/elasticache.png",
         },
       ],
     },
     {
       name: "Observability",
+      delay: 1,
       items: [
         {
           lable: "Cloudwatch",
-          text: "I Don't know what is this",
+          text: "Alarms, Metrics, Dasbhoards, logging",
           icon: "./assets/cloudwatch.png",
         },
         {
           lable: "Grafana",
-          text: "I Don't know what is this",
+          text: "Deploy; configure nodes for monitoring",
           icon: "./assets/grafana.png",
         },
         {
           lable: "SNS",
-          text: "I Don't know what is this",
+          text: "Notify when alarms are triggered",
           icon: "./assets/sns.jpg",
         },
       ],
@@ -199,7 +208,7 @@ const Tech = () => {
         AWS (Amazon Web Services)
       </h2>
 
-      <div className="w-full lg:px-28 gap-10 lg:grid md:grid-cols-2 grid lg:grid-cols-3 sm:px-10 lg:py-24 md:py-20 py-6 justify-center">
+      <div className="w-full lg:px-28 gap-10 lg:grid md:grid-cols-2 grid lg:grid-cols-3 sm:grid-cols-2 sm:px-10 lg:py-24 md:py-20 py-6 justify-center">
         {categories.map((category) => (
           <CategoryCard category={category} />
         ))}

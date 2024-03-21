@@ -10,7 +10,7 @@ const ItemCard = ({ items = [], dialogClose }) => {
         <IoMdClose className="text-2xl" />
       </button>
       {items.map((item) => (
-        <div className="item text-white w-full pr-12 relative h-20 flex items-center gap-4 overflow-hidden rounded-xl px-4 after:transition-all after:duration-300 after:-left-full after:content-[''] after:w-full after:h-full after:top-0 cursor-pointer hover:text-black transition-all duration-300 hover:after:left-0 after:absolute">
+        <div className="item text-white w-full pr-12 relative min-h-20 flex items-center gap-4 overflow-hidden rounded-xl px-4 after:transition-all after:duration-300 after:-left-full after:content-[''] after:w-full after:h-full after:top-0 cursor-pointer hover:text-black transition-all duration-300 hover:after:left-0 after:absolute">
           <div className="w-14 h-14 rounded-xl overflow-hidden bg-white relative z-50">
             <img src={item.icon} className="w-full h-full" alt="" />
           </div>

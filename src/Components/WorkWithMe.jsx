@@ -34,7 +34,12 @@ const box3 = [
     content: "Automate the process of turning on/off non-production resources",
   },
 ];
-const box4 = [{ content: "AWS Config and Security Hub" }];
+const box4 = [
+  { content: "Least privileged principle" },
+  { content: "AWS Config and Security Hub" },
+  { content: "Container image scanning" },
+  { content: "OS Patch management" },
+];
 
 const Content = ({ content = [] }) => {
   return (
@@ -72,7 +77,7 @@ const WorkWithMe = () => {
       delay: 0.7,
     },
     {
-      title: "Security and Compliance",
+      title: "Security & Compliance",
       icon: "./assets/icons/security.png",
       content: <Content content={box4} />,
       delay: 0.9,

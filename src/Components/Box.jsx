@@ -20,7 +20,7 @@ const Box = ({ content, title, icon, delay }) => {
       whileInView={{ scale: 1 }}
       transition={{ delay }}
     >
-      <div className="w-full flex gap-4 items-center justify-center min-h-28 px-4">
+      <div className="w-full flex flex-col gap-4 items-center justify-between min-h-28 px-4">
         <img
           src={icon}
           className="lg:w-12 lg:h-12 md:w-10 md:h-10 w-8 h-8 invert"

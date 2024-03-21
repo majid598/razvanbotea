@@ -90,8 +90,6 @@ const WorkWithMe = () => {
             icon={work.icon}
             title={work.title}
             content={work.content}
-            // mouseEnter={work.mouseEnter}
-            // mouseLeave={work.mouseLeave}
             delay={work.delay}
           />
         ))}

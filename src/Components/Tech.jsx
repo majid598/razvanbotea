@@ -1,57 +1,11 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
+import { IoMdClose } from "react-icons/io";
+import ItemCard from "./ItemCard";
+import { useState } from "react";
 import { Dialog } from "@mui/material";
 import { FaEye } from "react-icons/fa";
-import { IoMdClose } from "react-icons/io";
 
-const Category = ({ items, dialogClose }) => {
-  return (
-    <div className="bg-[#081936] flex pt-12 flex-col gap-2 rounded-2xl p-5">
-      <button
-        className="top-3 right-3 absolute text-white"
-        onClick={dialogClose}
-      >
-        <IoMdClose className="text-2xl" />
-      </button>
-      {items.map((item) => (
-        <div className="item text-white w-full pr-12 relative h-20 flex items-center gap-4 overflow-hidden rounded-xl px-4 after:transition-all after:duration-300 after:-left-full after:content-[''] after:w-full after:h-full after:top-0 cursor-pointer hover:text-black transition-all duration-300 hover:after:left-0 after:absolute">
-          <div className="w-14 rounded-xl overflow-hidden relative z-50">
-            <img src={item.icon} className="w-full h-full" alt="" />
-          </div>
-          <div className="relative z-50">
-            <h2 className="font-semibold text-xl">{item.lable}</h2>
-            <p className="text-sm">{item.text}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-};
-
-const Tech = () => {
-  const categories = [1, 2, 3, 4, 5];
-  const items = [
-    {
-      lable: "EC2",
-      text: "I Don't know what is this",
-      icon: "./assets/ec2.png",
-    },
-    {
-      lable: "ECS",
-      text: "I Don't know what is this",
-      icon: "./assets/ecs.png",
-    },
-    {
-      lable: "Lambda",
-      text: "I Don't know what is this",
-      icon: "./assets/logo192.png",
-    },
-    {
-      lable: "ApiGateway",
-      text: "I Don't know what is this",
-      icon: "./assets/ec2.png",
-    },
-  ];
+const CategoryCard = ({ category }) => {
   const [isDialog, setisDialog] = useState(false);
   const dialogOpen = () => {
     setisDialog(true);
@@ -59,6 +13,181 @@ const Tech = () => {
   const dialogClose = () => {
     setisDialog(false);
   };
+  return (
+    <div
+      className={`bg-[#16294c] lg:w-full flex flex-col items-center justify-between md:w-1/4 lg:py-4 px-4 w-1/3 relative min-h-24 rounded-xl bg-cover overflow-hidden`}
+    >
+      <h2 className="text-center py-3 text-2xl">{category.name}</h2>
+      <button onClick={dialogOpen} className="flex mx-auto items-center gap-2">
+        More <FaEye />
+      </button>
+      {isDialog && (
+        <Dialog
+          open={dialogOpen}
+          onClose={dialogClose}
+          PaperProps={{ style: { backgroundColor: "transparent" } }}
+        >
+          <ItemCard items={category.items} dialogClose={dialogClose} />
+        </Dialog>
+      )}
+    </div>
+  );
+};
+
+const Tech = () => {
+  const categories = [
+    {
+      name: "Compute",
+      items: [
+        {
+          lable: "EC2",
+          text: "Deployment & Management.",
+          icon: "./assets/ec2.png",
+        },
+        {
+          lable: "ECS",
+          text: "Cluster building & Management",
+          icon: "./assets/ecs.png",
+        },
+        {
+          lable: "Lambda",
+          text: "Automation & serverless apps",
+          icon: "./assets/lambda.png",
+        },
+        {
+          lable: "ApiGateway",
+          text: "Container runtime",
+          icon: "./assets/ec2.png",
+        },
+      ],
+    },
+    {
+      name: "Tools",
+      items: [
+        {
+          lable: "AWS CDK",
+          text: "I Don't know what is this",
+          icon: "./assets/aws-cdk.png",
+        },
+        {
+          lable: "Terraform",
+          text: "I Don't know what is this",
+          icon: "./assets/terraform.png",
+        },
+        {
+          lable: "Serverless.js",
+          text: "I Don't know what is this",
+          icon: "./assets/serverless.png",
+        },
+        {
+          lable: "Nodejs",
+          text: "I Don't know what is this",
+          icon: "./assets/nodejs.png",
+        },
+        {
+          lable: "Typescript",
+          text: "I Don't know what is this",
+          icon: "./assets/typescript.svg",
+        },
+      ],
+    },
+    {
+      name: "CDN & Storage",
+      items: [
+        {
+          lable: "S3",
+          text: "I Don't know what is this",
+          icon: "./assets/s3.png",
+        },
+        {
+          lable: "Cloudfront",
+          text: "I Don't know what is this",
+          icon: "./assets/cloudfront.png",
+        },
+        {
+          lable: "EBS",
+          text: "I Don't know what is this",
+          icon: "./assets/ebs.png",
+        },
+        {
+          lable: "EFS",
+          text: "I Don't know what is this",
+          icon: "./assets/efs.svg",
+        },
+      ],
+    },
+    {
+      name: "Security & Compliance",
+      items: [
+        {
+          lable: "Config",
+          text: "I Don't know what is this",
+          icon: "./assets/config.png",
+        },
+        {
+          lable: "Security Hub",
+          text: "I Don't know what is this",
+          icon: "./assets/securityHub.jpg",
+        },
+        {
+          lable: "SSM",
+          text: "I Don't know what is this",
+          icon: "./assets/ssm.png",
+        },
+        {
+          lable: "WAF",
+          text: "I Don't know what is this",
+          icon: "./assets/waf.png",
+        },
+        {
+          lable: "VPC",
+          text: "I Don't know what is this",
+          icon: "./assets/vpc.png",
+        },
+      ],
+    },
+    {
+      name: "Databases",
+      items: [
+        {
+          lable: "RDS",
+          text: "I Don't know what is this",
+          icon: "./assets/rds.png",
+        },
+        {
+          lable: "DynamoDB",
+          text: "I Don't know what is this",
+          icon: "./assets/dynamodb.jpg",
+        },
+        {
+          lable: "ElastiCache",
+          text: "I Don't know what is this",
+          icon: "./assets/elastiCache.webp",
+        },
+      ],
+    },
+    {
+      name: "Observability",
+      items: [
+        {
+          lable: "Cloudwatch",
+          text: "I Don't know what is this",
+          icon: "./assets/cloudwatch.png",
+        },
+        {
+          lable: "Grafana",
+          text: "I Don't know what is this",
+          icon: "./assets/grafana.png",
+        },
+        {
+          lable: "SNS",
+          text: "I Don't know what is this",
+          icon: "./assets/sns.jpg",
+        },
+      ],
+    },
+  ];
+
   return (
     <div className="w-full relative py-20">
       <h1 className="text-center daFont lg:text-4xl md:text-4xl sm:text-3xl text-2xl font-semibold tracking-[2px]">
@@ -68,29 +197,10 @@ const Tech = () => {
         AWS (Amazon Web Services)
       </h2>
 
-      <div className="w-full lg:px-28 gap-10 lg:grid lg:grid-cols-5 sm:px-10 py-24 justify-center flex flex-wrap">
-        {categories.map((i) => (
-          <div
-            className={`bg-[#16294c] lg:w-full md:w-1/4 px-4 w-1/3 relative h-24 rounded-xl bg-cover overflow-hidden`}
-          >
-            <h2 className="text-center py-3 text-2xl">Compute</h2>
-            <button
-              onClick={dialogOpen}
-              className="flex mx-auto items-center gap-2"
-            >
-              More <FaEye />
-            </button>
-          </div>
+      <div className="w-full lg:px-28 gap-10 lg:grid lg:grid-cols-4 sm:px-10 py-24 justify-center flex flex-wrap">
+        {categories.map((category) => (
+          <CategoryCard category={category} />
         ))}
-        {isDialog && (
-          <Dialog
-            open={dialogOpen}
-            onClose={dialogClose}
-            PaperProps={{ style: { backgroundColor: "transparent" } }}
-          >
-            <Category items={items} dialogClose={dialogClose} />
-          </Dialog>
-        )}
       </div>
     </div>
   );

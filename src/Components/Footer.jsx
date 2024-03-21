@@ -4,9 +4,9 @@ import { IoMdMail } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <div className="w-full relative lg:flex md:flex lg:h-[60vh] border-t p-20">
-      <h1 className="text-3xl font-semibold">Contact me</h1>
-      <div className="lg:w-5/6 md:w-5/6 w-full flex lg:flex-row md:flex-row flex-col lg:gap-32 lg:justify-between md:gap-24">
+    <div className="w-full relative lg:flex justify-between pr-60 md:flex lg:h-[60vh] border-t p-20">
+      <div>
+        <h1 className="text-3xl font-semibold">Contact me</h1>
         <div className="mt-20">
           <a
             href="https://www.linkedin.com/in/razvanbotea/"
@@ -23,13 +23,13 @@ const Footer = () => {
             <IoMdMail /> contact@razvanbotea.me
           </a>
         </div>
-        <div className="lg:w-1/4 w-full mt-10 lg:mt-0 mx-20">
-          <img
-            src={"./assets/manoncall.png"}
-            className="w-full h-full object-contain"
-            alt=""
-          />
-        </div>
+      </div>
+      <div className="lg:w-1/4 w-full mt-10 lg:mt-0 mx-20">
+        <img
+          src={"./assets/manoncall.png"}
+          className="w-full h-full object-contain"
+          alt=""
+        />
       </div>
       <div className="absolute bottom-8 ">
         <h2 className="font-semibold">All rights reserved @ Mr Razvanbotea</h2>

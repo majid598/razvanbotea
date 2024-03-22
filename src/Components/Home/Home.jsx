@@ -15,7 +15,7 @@ const Home = () => {
   // };
 
   return (
-    <div className="w-full relative cursor-">
+    <div className="w-full relative">
       {/* <div
         id="crsr"
         className={`crsr w-12 scale-75 rounded-full transition duration-300 bg-transparent border-white border top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  -z-50 absolute h-12`}

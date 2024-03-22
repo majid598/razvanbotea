@@ -3,8 +3,10 @@ const About = () => {
     <div className="w-full lg:px-36 px-10 mt-14">
       <div className="w-full h-full rounded-2xl bg-[#080D18] items-center flex lg:flex-row flex-col about">
         <div className="lg:w-2/4 w-full lg:h-full h-2/4 lg:p-14 p-8 relative">
-          <h1 className="text-4xl daFont font-semibold">About</h1>
-          <p className="lg:py-10 py-4 text-sm lg:leading-6 leading-4 tracking-tighter lg:tracking-normal text-gray-400 lg:w-11/12">
+          <h1 className="lg:text-4xl md:text-3xl text-2xl daFont font-semibold text-center">
+            About
+          </h1>
+          <p className="lg:py-10 py-4 text-center text-sm lg:leading-6 leading-4 tracking-tighter lg:tracking-normal text-gray-400 lg:w-11/12">
             As an AWS DevOps Engineer with over 8 years of dedicated experience,
             I bring a unique perspective having initially started my journey as
             a Backend Software Developer. My expertise lies in leveraging the

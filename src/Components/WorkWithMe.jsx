@@ -9,8 +9,7 @@ const box1 = [
       "Cloudwatch alarms, eventbridge events for complex responses to situations",
   },
   {
-    content:
-      "Maintaning optimal operations when it comes to CI/CD pipelines",
+    content: "Maintaning optimal operations when it comes to CI/CD pipelines",
   },
 ];
 const box2 = [

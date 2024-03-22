@@ -47,6 +47,9 @@ body {
 #div::after {
   content: "ENGINEER";
   position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
   transition: all 0.5s;
   bottom: -100%;
   left: 0;

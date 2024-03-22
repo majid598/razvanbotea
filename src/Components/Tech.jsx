@@ -20,7 +20,7 @@ const CategoryCard = ({ category }) => {
       transition={{ delay: category.delay }}
       className={`bg-[#16294c] w-full flex flex-col items-center justify-between py-4 px-20 lg:px-4 md:px-4 sm:px-4 relative min-h-24 rounded-xl overflow-hidden`}
     >
-      <h2 className="text-center py-3 lg:text-2xl md:text-xl">
+      <h2 className="text-center tracking-tighter daFont py-3 lg:text-xl md:text-xl">
         {category.name}
       </h2>
       <button onClick={dialogOpen} className="flex mx-auto items-center gap-2">

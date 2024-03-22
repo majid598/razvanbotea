@@ -4,7 +4,7 @@ import { IoMdMail } from "react-icons/io";
 const Footer = () => {
   return (
     <footer className="lg:min-h-[60vh] mt-40">
-      <div className="w-full h-full lg:flex justify-between lg:pr-60 md:flex border-t p-20">
+      <div className="w-full h-full lg:flex justify-between lg:pr-60 md:flex border-t md:p-20 lg:p-20 px-12 py-16">
         <div>
           <h1 className="text-3xl font-semibold w-full daFont">Contact me</h1>
           <div className="lg:mt-20 mt-5">

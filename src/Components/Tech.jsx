@@ -18,7 +18,7 @@ const CategoryCard = ({ category }) => {
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
       transition={{ delay: category.delay }}
-      className={`bg-[#16294c] w-full flex flex-col items-center justify-between py-4 px-20 lg:px-4 md:px-4 sm:px-4 relative min-h-24 rounded-xl overflow-hidden`}
+      className={`bg-[#16294c] w-full flex flex-col items-center justify-between py-4 px-4 lg:px-4 md:px-4 sm:px-4 relative min-h-24 rounded-xl overflow-hidden`}
     >
       <h2 className="text-center tracking-tighter daFont py-3 lg:text-xl md:text-xl">
         {category.name}
@@ -202,13 +202,13 @@ const Tech = () => {
   return (
     <div className="w-full relative lg:py-20 md:py-16 py-10 mt-10">
       <h1 className="text-center daFont lg:text-4xl md:text-4xl sm:text-3xl text-2xl font-semibold tracking-[2px]">
-        Skill Sets 
+        Skill Sets
       </h1>
       <h2 className="lg:text-2xl text-xl daFont font-semibold lg:px-28 text-center py-10">
         AWS (Amazon Web Services)
       </h2>
 
-      <div className="w-full lg:px-28 gap-10 lg:grid md:grid-cols-2 grid lg:grid-cols-3 sm:grid-cols-2 sm:px-10 lg:py-10 py-6 justify-center">
+      <div className="w-full lg:px-28 gap-10 lg:grid md:grid-cols-2 grid lg:grid-cols-3 sm:grid-cols-2 sm:px-10 px-8 lg:py-10 py-6 justify-center">
         {categories.map((category) => (
           <CategoryCard category={category} />
         ))}

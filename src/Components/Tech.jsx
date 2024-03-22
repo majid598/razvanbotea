@@ -73,27 +73,27 @@ const Tech = () => {
       items: [
         {
           lable: "AWS CDK",
-          text: "I Don't know what is this",
+          text: "",
           icon: "./assets/aws-cdk.png",
         },
         {
           lable: "Terraform",
-          text: "I Don't know what is this",
+          text: "",
           icon: "./assets/terraform.png",
         },
         {
           lable: "Serverless.js",
-          text: "I Don't know what is this",
+          text: "",
           icon: "./assets/serverless.png",
         },
         {
           lable: "Nodejs",
-          text: "I Don't know what is this",
+          text: "",
           icon: "./assets/nodejs.png",
         },
         {
           lable: "Typescript",
-          text: "I Don't know what is this",
+          text: "",
           icon: "./assets/typescript.svg",
         },
       ],

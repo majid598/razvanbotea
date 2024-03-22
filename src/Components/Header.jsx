@@ -3,8 +3,8 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Header = () => {
   return (
-    <header className="sticky top-0">
-      <nav className="w-full h-20 flex bg-transparent/30 items-center justify-between lg:px-20 md:px-20 sm:px-16 px-10">
+    <header className="sticky top-0 z-[99]">
+      <nav className="w-full h-20 flex bg-[#16294c] items-center justify-between lg:px-20 md:px-20 sm:px-16 px-10">
         <motion.div
           initial={{ y: "-100%" }}
           whileInView={{ y: 0 }}

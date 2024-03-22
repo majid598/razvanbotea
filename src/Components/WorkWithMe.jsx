@@ -85,11 +85,11 @@ const WorkWithMe = () => {
   ];
 
   return (
-    <div className="w-full relative flex flex-col items-center py-16">
+    <div className="w-full relative flex flex-col items-center mt-10">
       <h1 className="daFont lg:text-3xl mg:text-2xl sm:text-2xl text-xl font-semibold">
         Why work with me ?
       </h1>
-      <div className="w-full lg:px-28 md:px-12 md:grid-cols-2 grid-cols-1 py-10 grid px-10 lg:grid-cols-2 gap-10">
+      <div className="w-full lg:px-28 md:px-12 md:grid-cols-2 grid-cols-1 mt-10 grid px-10 lg:grid-cols-2 gap-10">
         {works.map((work) => (
           <Box
             icon={work.icon}

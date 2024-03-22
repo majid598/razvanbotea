@@ -13,7 +13,7 @@ const Profile = () => {
       </div>
       <div className="w-full flex bg-whit flex-col text-center justify-center mt-5">
         <h2 className="lg:text-3xl md:text-3xl sm:text-2xl text-xl font-semibold">
-          I'm Razvanbotea
+          I'm Răzvan Botea
         </h2>
         <h1 className="lg:text-6xl daFont md:text-4xl sm:text-3xl text-2xl flex items-center lg:gap-4 md:gap-3 gap-2 justify-center tracking-tighter font-bold uppercase mt-3">
           AWS DevOps
@@ -30,9 +30,13 @@ const Profile = () => {
           </div>
         </h1>
         <h4 className="lg:text-xl lg:tracking-tight lg:w-2/4 mx-auto px-4 font-semibold lg:mt-2 mt-5">
-          Coming together is a beginning; keeping together is progress; working
-          together is success
+          "Coming together is a beginning; keeping together is progress; working
+          together is success"
         </h4>
+        <div className="flex gap-2 justify-center items-center">
+          <h4>Author :</h4>
+          <span className="mt-2 font-semibold">"Edward Everett Hale"</span>
+        </div>
       </div>
     </div>
   );

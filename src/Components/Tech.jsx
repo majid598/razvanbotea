@@ -105,7 +105,7 @@ const Tech = () => {
         {
           lable: "S3",
           text: "Configuring & Optimizing (+ Athena)",
-          icon: "./assets/s3.png",
+          icon: "./assets/s3.svg",
         },
         {
           lable: "Cloudfront",
@@ -115,7 +115,7 @@ const Tech = () => {
         {
           lable: "EBS",
           text: "Storage for instances and containers",
-          icon: "./assets/ebs.png",
+          icon: "./assets/ebs.svg",
         },
         {
           lable: "EFS",
@@ -167,7 +167,7 @@ const Tech = () => {
         {
           lable: "DynamoDB",
           text: "Tables for simple/low requirements",
-          icon: "./assets/dynamodb.jpg",
+          icon: "./assets/dynamodb.png",
         },
         {
           lable: "ElastiCache",
@@ -193,7 +193,7 @@ const Tech = () => {
         {
           lable: "SNS",
           text: "Notify when alarms are triggered",
-          icon: "./assets/sns.jpg",
+          icon: "./assets/sns.png",
         },
       ],
     },
@@ -202,13 +202,13 @@ const Tech = () => {
   return (
     <div className="w-full relative lg:py-20 md:py-16 py-10 mt-10">
       <h1 className="text-center daFont lg:text-4xl md:text-4xl sm:text-3xl text-2xl font-semibold tracking-[2px]">
-        Tech keywords
+        Skill Sets 
       </h1>
       <h2 className="lg:text-2xl text-xl daFont font-semibold lg:px-28 text-center py-10">
         AWS (Amazon Web Services)
       </h2>
 
-      <div className="w-full lg:px-28 gap-10 lg:grid md:grid-cols-2 grid lg:grid-cols-3 sm:grid-cols-2 sm:px-10 md:py-20 py-6 justify-center">
+      <div className="w-full lg:px-28 gap-10 lg:grid md:grid-cols-2 grid lg:grid-cols-3 sm:grid-cols-2 sm:px-10 lg:py-10 py-6 justify-center">
         {categories.map((category) => (
           <CategoryCard category={category} />
         ))}

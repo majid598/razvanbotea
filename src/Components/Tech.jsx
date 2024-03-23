@@ -47,7 +47,7 @@ const Tech = () => {
       items: [
         {
           lable: "EC2",
-          text: "Deployment & Management.",
+          text: "Deployment & Management",
           icon: "./assets/ec2.png",
         },
         {
@@ -61,9 +61,19 @@ const Tech = () => {
           icon: "./assets/lambda.png",
         },
         {
-          lable: "ApiGateway",
+          lable: "Docker",
           text: "Container runtime",
-          icon: "./assets/ec2.png",
+          icon: "./assets/docker.png",
+        },
+        {
+          lable: "Alpine Linux",
+          text: "For containers",
+          icon: "./assets/alpine-linux.svg",
+        },
+        {
+          lable: "Ubuntu",
+          text: "OS Instances",
+          icon: "./assets/ubuntu.svg",
         },
       ],
     },

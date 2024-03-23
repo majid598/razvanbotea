@@ -11,7 +11,7 @@ const Header = () => {
           className="flex items-center gap-2"
         >
           <div className="w-14 h-14 rounded-full bg-zinc-300 overflow-hidden border profile2 cursor- transition-all duration-300">
-            <img src="./assets/razvan.jpeg" className="w-full h-full" alt="" />
+            <img src="./assets/header1.jpg" className="w-full h-full" alt="" />
           </div>
           <h3 className="font-semibold">Răzvan Botea</h3>
         </motion.div>

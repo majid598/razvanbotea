@@ -201,13 +201,9 @@ const Tech = () => {
 
   return (
     <div className="w-full relative lg:py-20 md:py-16 py-10 mt-10">
-      <h1 className="text-center daFont lg:text-4xl md:text-4xl sm:text-3xl text-2xl font-semibold tracking-[2px]">
+      <h1 className="text-center daFont mb-4 lg:text-4xl md:text-4xl sm:text-3xl text-2xl font-semibold tracking-[2px]">
         Skill Sets
       </h1>
-      <h2 className="lg:text-2xl text-xl daFont font-semibold lg:px-28 text-center py-10">
-        AWS (Amazon Web Services)
-      </h2>
-
       <div className="w-full lg:px-28 gap-10 lg:grid md:grid-cols-2 grid lg:grid-cols-3 sm:grid-cols-2 sm:px-10 px-8 lg:py-10 py-6 justify-center">
         {categories.map((category) => (
           <CategoryCard category={category} />

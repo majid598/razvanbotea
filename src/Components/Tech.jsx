@@ -63,12 +63,12 @@ const Tech = () => {
         {
           lable: "Docker",
           text: "Container runtime",
-          icon: "./assets/docker.png",
+          icon: "./assets/docker.webp",
         },
         {
           lable: "Alpine Linux",
           text: "For containers",
-          icon: "./assets/alpine-linux.svg",
+          icon: "./assets/alpine-linux.png",
         },
         {
           lable: "Ubuntu",

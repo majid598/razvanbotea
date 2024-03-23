@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         <div className="absolute bottom-8">
           <h2 className="font-semibold">
-            All rights reserved @ Mr Răzvan Botea
+            All rights reserved @ Răzvan Botea
           </h2>
         </div>
       </div>

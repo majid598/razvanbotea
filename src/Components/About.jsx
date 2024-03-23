@@ -21,8 +21,8 @@ const About = () => {
             cloud computing.
           </p>
         </div>
-        <div className="lg:w-2/4 w-full lg:h-full gap-10 lg:py-12 p-8 lg:px-24">
-          <div className="box shadow overflow-hidden lg:w-80 rounded-2xl">
+        <div className="lg:w-2/4 w-full lg:h-full gap-10 lg:py-12 p-8">
+          <div className="box shadow overflow-hidden lg:w-80 mx-auto rounded-2xl">
             <img
               src="./assets/about.jpeg"
               className="w-full h-full object-contain"
